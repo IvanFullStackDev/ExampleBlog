@@ -1,0 +1,173 @@
+* {
+    font-family: 'tahoma';
+}
+
+body {
+    margin: 0;
+    background-color: #111;
+}
+
+header {
+    background-color: #1d1d1d;
+    padding: 30px;
+}
+.waviy {
+    position: absolute;
+    top: 0;
+    padding: 10px;
+}
+.waviy span:hover {
+    color:rgba(0, 255, 76, 0.5);
+
+}
+.waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i));
+}
+@keyframes flip {
+    0%,80% {
+        transform: rotateY(360deg);
+    }
+}
+
+/* NAV BAR*/
+
+nav {
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+nav li a:hover {
+    background-color: rgba(0, 255, 76, 0.5);
+}
+
+#word {
+    padding: 10px;
+    width: 300px;
+    color: #f2f2f2;
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+}
+
+.container {
+    width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.post {
+    background-color: #f2f2f2;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    transition: all box-shadow 0.3s ease;
+}
+
+.post:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 255, 76, 0.5);
+}
+
+section article h2, section article p {
+    margin: 1rem;
+    font-size: large;
+}
+
+time {
+    font-size: small;
+    color: gray;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    display: block;
+    text-align: right;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+
+}
+
+section a {
+    color: #222324;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    text-transform: uppercase;
+
+}
+
+section a:hover {
+    color: rgba(0, 255, 76, 0.5);
+}
+
+
+img {
+    border-radius: 0.5rem;
+}
+
+img#BrBa {
+    width: 100%;
+}
+
+ul img:hover {
+    transform: scale(1.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+footer {
+    background-color: #1d1d1d;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgba(0, 255, 76, 0.5);
+}
